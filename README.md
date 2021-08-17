@@ -9,3 +9,7 @@ Demo some examples in Julia.
 - Example 1.5.9 (HW1-Q4Q5)
 - Example 1.5.11
 
+## Lecture 4
+
+- HW4-Q4
+- HW4-Q7
