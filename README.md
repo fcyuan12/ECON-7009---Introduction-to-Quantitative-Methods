@@ -13,3 +13,8 @@ Demo some examples in Julia.
 
 - HW4-Q4
 - HW4-Q7
+
+## Lecture 7
+
+- HW7-Q2
+
