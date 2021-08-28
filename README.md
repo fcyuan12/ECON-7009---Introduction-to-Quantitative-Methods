@@ -11,10 +11,10 @@ Demo some examples in Julia.
 
 ## Lecture 4
 
-- HW4-Q4
-- HW4-Q7
+- HW4-Q4: Matrix Algebra
+- HW4-Q7: Eigenvalues, Eigenvectors, Definiteness
 
 ## Lecture 7
 
-- HW7-Q2
+- HW7-Q2: Hessian Matrix, Eigenvalues, Definiteness
 
