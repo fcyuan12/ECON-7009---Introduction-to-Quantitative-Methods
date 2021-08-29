@@ -17,4 +17,5 @@ Demo some examples in Julia.
 ## Lecture 7
 
 - HW7-Q2: Hessian Matrix, Eigenvalues, Definiteness
+- Ex-1702: Exercise 17.2 in Simon and Blume (1994)
 
