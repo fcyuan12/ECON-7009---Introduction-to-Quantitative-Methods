@@ -19,3 +19,10 @@ Demo some examples in Julia.
 - HW7-Q2: Hessian Matrix, Eigenvalues, Definiteness
 - Ex-1702: Exercise 17.2 in Simon and Blume (1994)
 
+## Exam
+
+- Midterm
+- Final Exam
+
+https://fcyuan12.github.io/ECON-7009---Introduction-to-Quantitative-Methods/index.html
+
