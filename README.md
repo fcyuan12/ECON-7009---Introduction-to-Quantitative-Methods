@@ -24,5 +24,5 @@ Demo some examples in Julia.
 - Midterm
 - Final Exam
 
-https://fcyuan12.github.io/ECON-7009---Introduction-to-Quantitative-Methods/index.html
+https://fcyuan12.github.io/ECON-7009---Introduction-to-Quantitative-Methods/
 
