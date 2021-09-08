@@ -199,14 +199,42 @@ for all <span class="math inline">\(x\in U\)</span>. Furthermore, <span class="m
 <span class="citation">(Marsden, Hoffman, and others <a href="#ref-marsden1993elementary" role="doc-biblioref">1993</a>, 398 Theorem 7.2.1)</span>
 </p>
 </div>
+<div class="corollary">
+<span id="cor:MarsdenCor070202" class="corollary"><strong>Corollary 1  </strong></span>In the implicit function theorem, the <span class="math inline">\(\partial f_j / \partial x_i\)</span> are given by
+<span class="math display">\[\begin{align}
+    \begin{bmatrix}
+    \frac{\partial f_1}{\partial x_1} &amp; \ldots &amp; \frac{\partial f_1}{\partial x_n} \\
+    \vdots &amp; \ddots &amp; \vdots \\
+    \frac{\partial f_m}{\partial x_1} &amp; \ldots &amp; \frac{\partial f_m}{\partial x_n}
+    \end{bmatrix}
+    =
+    -
+    \begin{bmatrix}
+    \frac{\partial F_1}{\partial y_1} &amp; \ldots &amp; \frac{\partial F_1}{\partial y_m} \\
+    \vdots &amp; \ddots &amp; \vdots \\
+    \frac{\partial F_m}{\partial y_1} &amp; \ldots &amp; \frac{\partial F_m}{\partial y_m}
+    \end{bmatrix}^{-1}  
+    \begin{bmatrix}
+    \frac{\partial F_1}{\partial x_1} &amp; \ldots &amp; \frac{\partial F_1}{\partial x_n} \\
+    \vdots &amp; \ddots &amp; \vdots \\
+    \frac{\partial F_m}{\partial x_1} &amp; \ldots &amp; \frac{\partial F_m}{\partial x_n}
+    \end{bmatrix}    
+\end{align}\]</span>
+where <span class="math inline">\(^{-1}\)</span> denotes the inverse matrix.
+<p align="right">
+<span class="citation">(Marsden, Hoffman, and others <a href="#ref-marsden1993elementary" role="doc-biblioref">1993</a>, 399 Corollary 7.2.2)</span>
+</p>
+</div>
 </div>
 <div id="solution-a-5" class="section level2 unnumbered">
 <h2>Solution (a)</h2>
-<p>(6%) By Theorem <a href="question-9-1.html#thm:MarsdenThm070201">7</a>, define
+<p>(6%) By Theorem <a href="question-9-1.html#thm:MarsdenThm070201">7</a>, consider
 <span class="math display">\[\begin{align}
     n 
     &amp; = 2 \\
     m 
+    &amp; = 2 \\
+    p
     &amp; = 2 \\
     F
     &amp; = (F_k - r, F_N - w) \\
@@ -220,6 +248,52 @@ for all <span class="math inline">\(x\in U\)</span>. Furthermore, <span class="m
 </div>
 <div id="solution-b-5" class="section level2 unnumbered">
 <h2>Solution (b)</h2>
+<p>(6%) By Corollary <a href="question-9-1.html#cor:MarsdenCor070202">1</a>,
+<span class="math display">\[\begin{align}
+    \begin{bmatrix}
+    \frac{\partial K}{\partial r} &amp; \frac{\partial K}{\partial w} \\
+    \frac{\partial N}{\partial r} &amp; \frac{\partial N}{\partial w}
+    \end{bmatrix}  
+    &amp; = 
+    -
+    \begin{bmatrix}
+    F_{KK} &amp; F_{KN} \\
+    F_{NK} &amp; F_{NN}
+    \end{bmatrix}^{-1}  
+    \begin{bmatrix}
+    -1 &amp; 0 \\
+    0 &amp; -1 
+    \end{bmatrix} \\
+    &amp; = 
+    \frac{1}{\Delta}
+    \begin{bmatrix}
+    F_{NN} &amp; -F_{KN} \\
+    -F_{NK} &amp; F_{KK}
+    \end{bmatrix}   
+\end{align}\]</span>
+where
+<span class="math display">\[\begin{align}
+    \Delta
+    &amp; = 
+    \begin{vmatrix}
+    F_{KK} &amp; F_{KN} \\
+    F_{NK} &amp; F_{NN}
+    \end{vmatrix}
+    &gt; 0.
+\end{align}\]</span></p>
+<p>(2%) <span class="math inline">\(F_{KN} &gt; 0\)</span> captures the complementarity between two inputs. More capital employed increases the marginal productivity of labor, and more labor hired increases the marginal productivity of capital.</p>
+<p>(2%) We find
+<span class="math display">\[\begin{align}
+    \frac{\partial K}{\partial w} 
+    &amp; = \frac{-F_{KN}}{\Delta}  &lt; 0.
+\end{align}\]</span>
+That is, <span class="math inline">\(K\)</span> is strictly decreasing in <span class="math inline">\(w\)</span>. It means that as a higher wage <span class="math inline">\(w\)</span> makes the firm to reduce capital inputs <span class="math inline">\(K\)</span>, a reduction in capital inputs will decrease the marginal productivity of labor.</p>
+<p>(2%) We find
+<span class="math display">\[\begin{align}
+    \frac{\partial N}{\partial r} 
+    &amp; = \frac{-F_{NK}}{\Delta}  &lt; 0.
+\end{align}\]</span>
+That is, <span class="math inline">\(N\)</span> is strictly decreasing in <span class="math inline">\(r\)</span>. It means that as a higher rental price <span class="math inline">\(r\)</span> makes the firm to reduce labors <span class="math inline">\(N\)</span>, a reduction in labors will decrease the marginal productivity of capital.</p>
 
 </div>
 </div>
