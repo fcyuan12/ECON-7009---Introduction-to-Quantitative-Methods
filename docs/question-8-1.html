@@ -118,7 +118,8 @@
 <li class="chapter" data-level="" data-path="question-8-1.html"><a href="question-8-1.html"><i class="fa fa-check"></i>Question 8</a><ul>
 <li class="chapter" data-level="" data-path="question-8-1.html"><a href="question-8-1.html#solution-a-4"><i class="fa fa-check"></i>Solution (a)</a></li>
 <li class="chapter" data-level="" data-path="question-8-1.html"><a href="question-8-1.html#solution-b-4"><i class="fa fa-check"></i>Solution (b)</a></li>
-<li class="chapter" data-level="" data-path="question-8-1.html"><a href="question-8-1.html#solution-c-1"><i class="fa fa-check"></i>Solution (c)</a></li>
+<li class="chapter" data-level="" data-path="question-8-1.html"><a href="question-8-1.html#solution-c-i."><i class="fa fa-check"></i>Solution (c) i.</a></li>
+<li class="chapter" data-level="" data-path="question-8-1.html"><a href="question-8-1.html#solution-c-ii."><i class="fa fa-check"></i>Solution (c) ii.</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="question-9-1.html"><a href="question-9-1.html"><i class="fa fa-check"></i>Question 9</a><ul>
 <li class="chapter" data-level="" data-path="question-9-1.html"><a href="question-9-1.html#related-definition-or-theorem-4"><i class="fa fa-check"></i>Related Definition or Theorem</a></li>
@@ -168,12 +169,139 @@ where <span class="math inline">\(p_1 &gt; 0\)</span> and <span class="math inli
 </blockquote>
 <div id="solution-a-4" class="section level2 unnumbered">
 <h2>Solution (a)</h2>
+<p>(8%) The Lagrangian function is
+<span class="math display">\[\begin{align}
+    \mathcal{L}
+    &amp; = x_1 + a \log x_2 
+      + \lambda_1 x_1 
+      + \lambda_2 x_2
+      + \lambda_3 \left( I - p_1x_1 - p_2x_2 \right).
+\end{align}\]</span>
+The first-order conditions are as follows.</p>
+<ul>
+<li><p><span class="math inline">\(\mathcal{L}_{x_i} = 0\)</span>:
+<span class="math display">\[\begin{align}
+  \mathcal{L}_{x_1}
+  &amp; = 1 + \lambda_1 - \lambda_3 p_1 = 0 \\
+  \mathcal{L}_{x_2}
+  &amp; = \frac{a}{x_2} + \lambda_2 - \lambda_3 p_2 = 0     
+\end{align}\]</span></p></li>
+<li><p><span class="math inline">\(\mathcal{L}_{\lambda_i} \geq 0\)</span>:
+<span class="math display">\[\begin{align}
+  \mathcal{L}_{\lambda_1} 
+  &amp; = x_1 \geq 0 \\
+  \mathcal{L}_{\lambda_2} 
+  &amp; = x_2 \geq 0 \\
+  \mathcal{L}_{\lambda_3} 
+  &amp; = I - p_1x_1 - p_2x_2 \geq 0    
+\end{align}\]</span></p></li>
+<li><p><span class="math inline">\(\lambda_i \geq 0\)</span>:
+<span class="math display">\[\begin{align}
+  \lambda_1 &amp; \geq 0 \\
+  \lambda_2 &amp; \geq 0 \\
+  \lambda_3 &amp; \geq 0
+\end{align}\]</span></p></li>
+<li><p><span class="math inline">\(\lambda_i \mathcal{L}_{\lambda_i} = 0\)</span>:
+<span class="math display">\[\begin{align}
+  \lambda_1 x_1 &amp; = 0 \\
+  \lambda_2 x_2 &amp; = 0 \\
+  \lambda_3 \left( I - p_1x_1 - p_2x_2 \right) &amp; = 0
+\end{align}\]</span></p></li>
+</ul>
 </div>
 <div id="solution-b-4" class="section level2 unnumbered">
 <h2>Solution (b)</h2>
+<p>(1%)
+<span class="math display">\[\begin{align}
+    \lim_{x_1\rightarrow 0} \frac{\partial U}{\partial x_1}(x_1, x_2)
+    &amp; = \lim_{x_1\rightarrow 0} 1 
+      = 1 &lt; \infty
+\end{align}\]</span></p>
+<p>(1%)
+<span class="math display">\[\begin{align}
+    \lim_{x_2\rightarrow 0} \frac{\partial U}{\partial x_2}(x_1, x_2)
+    &amp; = \lim_{x_1\rightarrow 0} \frac{a}{x_2} 
+      = \infty
+\end{align}\]</span></p>
 </div>
-<div id="solution-c-1" class="section level2 unnumbered">
-<h2>Solution (c)</h2>
+<div id="solution-c-i." class="section level2 unnumbered">
+<h2>Solution (c) i.</h2>
+<p>(5%) Consider <span class="math inline">\(h_E = \left\{ h_1, h_3 \right\}\)</span>.</p>
+<p>By <span class="math inline">\(\lambda_1 \mathcal{L}_{\lambda_1} = 0\)</span> and <span class="math inline">\(\lambda_1 \geq 0\)</span>,
+<span class="math display">\[\begin{align}
+    x_1 
+    &amp; = 0 \quad \Rightarrow \quad \lambda_1 \geq 0.    
+\end{align}\]</span></p>
+<p>By <span class="math inline">\(\lambda_2 \mathcal{L}_{\lambda_2} = 0\)</span> and <span class="math inline">\(\lambda_2 \geq 0\)</span>,
+<span class="math display">\[\begin{align}
+    x_2 
+    &amp; &gt; 0 \quad \Rightarrow \quad \lambda_2 = 0   
+\end{align}\]</span></p>
+<p>By <span class="math inline">\(\lambda_3 \mathcal{L}_{\lambda_3} = 0\)</span> and <span class="math inline">\(\lambda_3 \geq 0\)</span>,
+<span class="math display">\[\begin{align}
+    I - p_1x_1 - p_2x_2 
+    &amp; = 0 \quad \Rightarrow \quad \lambda_3 \geq 0
+\end{align}\]</span>
+and
+<span class="math display">\[\begin{align}
+    x_2 = \frac{I}{p_2}.
+\end{align}\]</span></p>
+<p>By <span class="math inline">\(\mathcal{L}_{x_2} = 0\)</span>,
+<span class="math display">\[\begin{align}
+    \lambda_{3}
+    &amp; = \frac{a}{p_2x_2} 
+      = \frac{a}{I} &gt; 0.
+\end{align}\]</span></p>
+<p>By <span class="math inline">\(\mathcal{L}_{x_1} = 0\)</span>,
+<span class="math display">\[\begin{align}
+    \lambda_1
+    &amp; = \lambda_3 p_1 - 1 \\
+    &amp; = \frac{ap_1}{I} - 1 \geq 0.
+\end{align}\]</span></p>
+<p>That is,
+<span class="math display">\[\begin{align}
+    I\leq ap_1.
+\end{align}\]</span></p>
+</div>
+<div id="solution-c-ii." class="section level2 unnumbered">
+<h2>Solution (c) ii.</h2>
+<p>(5%) Consider <span class="math inline">\(h_E = \left\{ h_3 \right\}\)</span>.</p>
+<p>By <span class="math inline">\(\lambda_1 \mathcal{L}_{\lambda_1} = 0\)</span> and <span class="math inline">\(\lambda_1 \geq 0\)</span>,
+<span class="math display">\[\begin{align}
+    x_1 
+    &amp; &gt; 0 \quad \Rightarrow \quad \lambda_1 = 0.    
+\end{align}\]</span></p>
+<p>By <span class="math inline">\(\lambda_2 \mathcal{L}_{\lambda_2} = 0\)</span> and <span class="math inline">\(\lambda_2 \geq 0\)</span>,
+<span class="math display">\[\begin{align}
+    x_2 
+    &amp; &gt; 0 \quad \Rightarrow \quad \lambda_2 = 0   
+\end{align}\]</span></p>
+<p>By <span class="math inline">\(\lambda_3 \mathcal{L}_{\lambda_3} = 0\)</span> and <span class="math inline">\(\lambda_3 \geq 0\)</span>,
+<span class="math display">\[\begin{align}
+    I - p_1x_1 - p_2x_2 
+    &amp; = 0 \quad \Rightarrow \quad \lambda_3 \geq 0.
+\end{align}\]</span></p>
+<p>By <span class="math inline">\(\mathcal{L}_{x_1} = 0\)</span>,
+<span class="math display">\[\begin{align}
+    \lambda_3
+    &amp; = \frac{1}{p_1} &gt; 0.
+\end{align}\]</span></p>
+<p>By <span class="math inline">\(\mathcal{L}_{x_2} = 0\)</span>,
+<span class="math display">\[\begin{align}
+    x_2
+    &amp; = \frac{a}{\lambda_3 p_2} \\
+    &amp; = \frac{p_1}{p_2}a &gt; 0.
+\end{align}\]</span></p>
+<p>By <span class="math inline">\(\mathcal{L}_{\lambda_3}\)</span>,
+<span class="math display">\[\begin{align}
+    x_1 
+    &amp; = \frac{I - p_2x_2}{p_1} \\
+    &amp; = \frac{I - p_1a}{p_1} &gt; 0.
+\end{align}\]</span></p>
+<p>That is,
+<span class="math display">\[\begin{align}
+    I - p_1a &gt; 0.
+\end{align}\]</span></p>
 </div>
 </div>
             </section>
