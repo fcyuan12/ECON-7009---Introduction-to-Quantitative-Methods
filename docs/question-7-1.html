@@ -161,9 +161,54 @@ Currently, it is using the input bundle <span class="math inline">\((K,L) = (1,1
 </blockquote>
 <div id="solution-a-3" class="section level2 unnumbered">
 <h2>Solution (a)</h2>
+<p>We find
+<span class="math display">\[\begin{align}
+    \nabla Q
+    &amp; =
+    \begin{bmatrix}
+    2.5K^{-0.5}L^{0.5} &amp; 2.5K^{0.5}L^{-0.5}
+    \end{bmatrix} \\
+    v
+    &amp; = 
+    \begin{bmatrix}
+    0.5 &amp; 0.5
+    \end{bmatrix}^{T}
+\end{align}\]</span>
+Then,</p>
+<ul>
+<li>(2%) <span class="math inline">\(Q(1,1) = 5\)</span>;</li>
+<li>(2%) <span class="math inline">\(\nabla Q(1,1) v = 2.5\)</span>.</li>
+</ul>
+<p>(1%) Thus,
+<span class="math display">\[\begin{align}
+    Q(1+0.5, 1+0.5)
+    &amp; \approx Q(1,1) + \nabla Q(1,1) v \\
+    &amp; = 7.5.
+\end{align}\]</span></p>
 </div>
 <div id="solution-b-3" class="section level2 unnumbered">
 <h2>Solution (b)</h2>
+<p>We find
+<span class="math display">\[\begin{align}
+    D^2Q
+    &amp; = 
+    \begin{bmatrix}
+    -1.25K^{-1.5}L^{0.5} &amp; 1.25 K^{-0.5}L^{-0.5} \\
+    1.25K^{-0.5}L^{-0.5} &amp; -1.25K^{0.5}L^{-1.5}
+    \end{bmatrix}.    
+\end{align}\]</span>
+Then,</p>
+<ul>
+<li>(1%) <span class="math inline">\(Q(1,1) = 5\)</span>;</li>
+<li>(1%) <span class="math inline">\(\nabla Q(1,1) v = 2.5\)</span>.</li>
+<li>(2%) <span class="math inline">\(\frac{1}{2}v&#39; D^2Q(1,1) v = 0\)</span>.</li>
+</ul>
+<p>(1%) Thus,
+<span class="math display">\[\begin{align}
+    Q(1+0.5, 1+0.5)
+    &amp; \approx Q(1,1) + \nabla Q(1,1) v + \frac{1}{2}v&#39; D^2Q(1,1) v \\
+    &amp; = 7.5.
+\end{align}\]</span></p>
 </div>
 </div>
             </section>
